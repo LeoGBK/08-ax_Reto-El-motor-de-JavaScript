@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: rgb(10, 168, 10);
+  background-color: rgb(83, 166, 83);
   font-size: large;
   font-weight: bolder;
   padding-top: 2em;
@@ -43,9 +43,22 @@ h2 {
 }
 
 #boton {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+button {
+  background-color: rgb(83, 166, 83);
+  color: white;
+  border: none;
   padding-top: 1em;
   padding-bottom: 1em;
-  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
 }
 
 /* Fixing footer position to the bottom. */
