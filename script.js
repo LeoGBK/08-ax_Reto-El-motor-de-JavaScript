@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const lista = [
+    const autos = [
         "imagen1.jpg",
         "imagen2.jpg",
         "imagen3.jpg",
@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "imagen7.jpg",
         "imagen8.jpg",
         "imagen9.jpg",
-        "imagen10.jpg"];
+        "imagen10.jpg"
+    ];
 
 
 });
