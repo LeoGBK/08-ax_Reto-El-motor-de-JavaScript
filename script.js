@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const autos = [
-        "auto1.jpg",
-        "auto2.jpg",
-        "auto3.jpg",
-        "auto4.jpg",
-        "auto5.jpg",
-        "auto6.jpg",
-        "auto7.jpg",
-        "auto8.jpg",
-        "auto9.jpg",
+        "auto01.jpg",
+        "auto02.jpg",
+        "auto03.jpg",
+        "auto04.jpg",
+        "auto05.jpg",
+        "auto06.jpg",
+        "auto07.jpg",
+        "auto08.jpg",
+        "auto09.jpg",
         "auto10.jpg"
     ];
 
