@@ -12,17 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
         "auto10.jpg"
     ];
 
-    const lienzo = document.getElementById('#portrait');
+    const lienzo = document.getElementById('portrait');
     const contenedor = document.querySelector('main section div#auto');
 
     autos.forEach(auto => {
         document.addEventListener('click', () => {
-            lienzo.style.display = 'none';
+            // lienzo.style.display = 'none';
             const imagen = document.createElement('img');
-            imagen.setAttribute('src', imagen);
+            imagen.setAttribute('src', auto);
             imagen.setAttribute('alt', 'automóvil');
             contenedor.appendChild(imagen);
             // lienzo.style.display = 'block';
-        })
-    }
+        });
+    });
 });
