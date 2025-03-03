@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     // const lienzo = document.getElementById('portrait');
+
     const contenedor = document.querySelector('main section div#auto');
     const boton = document.getElementById('boton');
 
@@ -20,13 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
     contenedor.innerHTML = '';
 
     boton.addEventListener('click', () => {
-        autos.forEach(auto => {
 
-            const imagen = document.createElement('img');
-            imagen.setAttribute('src', auto);
-            imagen.setAttribute('alt', 'automóvil');
-            // imagen.setAttribute('id', 'auto');
-            contenedor.appendChild(imagen);
-        });
+        const index = Math.floor(Math.random() * 10) // Obtaining a random number between 0 and 9 without decimals.
+        const imagen = document.createElement('img');
+        imagen.setAttribute('src', autos[index], 'alt', 'automóvil');
+        // imagen.setAttribute('alt', 'automóvil');
+        // imagen.setAttribute('id', 'auto');
+        contenedor.appendChild(imagen);
+
     });
 });
