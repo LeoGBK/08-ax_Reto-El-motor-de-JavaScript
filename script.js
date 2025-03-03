@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
         "auto10.jpg"
     ];
 
-    const lienzo = document.getElementById('portrait');
+    // const lienzo = document.getElementById('portrait');
     const contenedor = document.querySelector('main section div#auto');
+    const boton = document.getElementById('boton');
 
-
-    document.addEventListener('click', () => {
+    boton.addEventListener('click', () => {
         autos.forEach(auto => {
 
             // Clearing previous image.
