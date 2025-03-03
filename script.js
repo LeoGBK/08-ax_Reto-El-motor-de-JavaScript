@@ -16,15 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const contenedor = document.querySelector('main section div#auto');
     const boton = document.getElementById('boton');
 
+    // Clearing previous image.
+    contenedor.innerHTML = '';
+
     boton.addEventListener('click', () => {
         autos.forEach(auto => {
-
-            // Clearing previous image.
-            contenedor.innerHTML = '';
 
             const imagen = document.createElement('img');
             imagen.setAttribute('src', auto);
             imagen.setAttribute('alt', 'automóvil');
+            // imagen.setAttribute('id', 'auto');
             contenedor.appendChild(imagen);
         });
     });
