@@ -15,14 +15,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const lienzo = document.getElementById('portrait');
     const contenedor = document.querySelector('main section div#auto');
 
-    autos.forEach(auto => {
-        document.addEventListener('click', () => {
-            // lienzo.style.display = 'none';
+
+    document.addEventListener('click', () => {
+        autos.forEach(auto => {
+
+            // Clearing previous image.
+            contenedor.innerHTML = '';
+
             const imagen = document.createElement('img');
             imagen.setAttribute('src', auto);
             imagen.setAttribute('alt', 'automóvil');
             contenedor.appendChild(imagen);
-            // lienzo.style.display = 'block';
         });
     });
 });

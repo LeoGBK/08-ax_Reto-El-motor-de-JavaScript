@@ -42,13 +42,13 @@ h2 {
   margin-right: auto;
 }
 
-#boton {
+#seccion-boton {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
 }
 
-button {
+#boton {
   background-color: rgb(83, 166, 83);
   color: white;
   border: none;
@@ -57,7 +57,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#boton:hover {
   background-color: green;
 }
 
