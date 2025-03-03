@@ -34,8 +34,8 @@ h2 {
   font-weight: bold;
 }
 
-/* Giving styles to the card ("tarjeta"). */
-#auto img{
+/* Giving styles to the auto frame. */
+#auto img {
   width: 228px;
   margin-left: auto;
   margin-right: auto;
@@ -80,8 +80,10 @@ footer {
     font-size: x-large;
   }
 
-  #tarjeta {
-    width: 315px;
+  #auto img {
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #boton {
