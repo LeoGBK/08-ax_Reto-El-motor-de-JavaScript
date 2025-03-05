@@ -24,6 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Reducing the size of the button when clicked.
         boton.style.transform = 'scale(0.9)';
 
+        // Once the button is clicked, the text inside changes.
+        boton.textContent = 'Cambiar Imagen';
+
         // Restoring the size of the button after a very small delay.
         setTimeout(() => {
             boton.style.transform = 'scale(1)';
