@@ -35,7 +35,7 @@ h2 {
   font-weight: bold;
 }
 
-/* Giving styles to the auto frame. */
+/* Giving styles to the auto image frame. */
 #auto img {
   width: 228px;
   height: 150px;
@@ -43,6 +43,8 @@ h2 {
   margin-right: auto;
 }
 
+
+/* Setting styles for the button. */
 #seccion-boton {
   padding-top: 0.5em;
   padding-bottom: 0.5em;

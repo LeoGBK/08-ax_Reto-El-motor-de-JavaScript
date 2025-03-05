@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "auto10.jpg"
     ];
 
+    // Selecting specific tag in the HTML file which will be used later to add the image.
     const contenedor = document.querySelector('main section div#auto');
     const boton = document.getElementById('boton');
 
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clearing previous image.
         contenedor.innerHTML = '';
 
+        // Declaring variable to use for store the random value of the list index.
         let index;
 
         do {
@@ -41,9 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
         // Storing the new index in "previous" variable.
         previous = index;
 
+        // Creating the img element for the HTML
         const imagen = document.createElement('img');
+
+        // Giving the img element the attribute image so it can be later shown.
         imagen.setAttribute('src', autos[index]);
-        // imagen.setAttribute('alt', 'automóvil');
+
+        // Setting alt attribute to the created image.
+        imagen.setAttribute('alt', 'automóvil');
+
+        // Adding and showing the created image on the web page.
         contenedor.appendChild(imagen);
 
     });
