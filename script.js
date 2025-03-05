@@ -12,33 +12,38 @@ document.addEventListener('DOMContentLoaded', () => {
         "auto10.jpg"
     ];
 
-    // const lienzo = document.getElementById('portrait');
-
     const contenedor = document.querySelector('main section div#auto');
     const boton = document.getElementById('boton');
 
+    // Declaring variable to validate that index doesn't repeat with each click.
+    let previous = -1;
 
     boton.addEventListener('click', () => {
+
+        // Reducing the size of the button when clicked.
+        boton.style.transform = 'scale(0.9)';
+
+        // Restoring the size of the button after a very small delay.
+        setTimeout(() => {
+            boton.style.transform = 'scale(1)';
+        }, 200)
 
         // Clearing previous image.
         contenedor.innerHTML = '';
 
-        // Declaring variable to validate that index doesn't repeat.
-        let previous = 0;
+        let index;
 
-        const index = Math.floor(Math.random() * 10) // Obtaining a random number between 0 and 9 without decimals.
+        do {
+            // Obtaining a random number between 0 and the length of the list without decimals.
+            index = Math.floor(Math.random() * autos.length);
+        } while (index === previous); // This do while loop avoids getting the same previous index value.
 
-        if (index === previous && index < 9) {
-            index++;
-        } else {
-            if (index === previous && index === 9)
-                index--;
-        }
+        // Storing the new index in "previous" variable.
+        previous = index;
 
         const imagen = document.createElement('img');
         imagen.setAttribute('src', autos[index]);
         // imagen.setAttribute('alt', 'automóvil');
-        // imagen.setAttribute('id', 'auto');
         contenedor.appendChild(imagen);
 
     });

@@ -37,6 +37,7 @@ h2 {
 /* Giving styles to the auto frame. */
 #auto img {
   width: 228px;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
 }
