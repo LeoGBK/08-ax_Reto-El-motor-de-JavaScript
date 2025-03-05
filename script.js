@@ -17,10 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const contenedor = document.querySelector('main section div#auto');
     const boton = document.getElementById('boton');
 
-    // Clearing previous image.
-    contenedor.innerHTML = '';
 
     boton.addEventListener('click', () => {
+
+        // Clearing previous image.
+        contenedor.innerHTML = '';
 
         // Declaring variable to validate that index doesn't repeat.
         let previous = 0;
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const imagen = document.createElement('img');
-        imagen.setAttribute('src', autos[index], 'alt', 'automóvil');
+        imagen.setAttribute('src', autos[index]);
         // imagen.setAttribute('alt', 'automóvil');
         // imagen.setAttribute('id', 'auto');
         contenedor.appendChild(imagen);
