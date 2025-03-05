@@ -21,6 +21,7 @@ header {
 }
 
 main {
+  padding-top: 5em;
   height: 100%;
 }
 
@@ -73,22 +74,32 @@ footer {
 
 /* Applying media query to change <img> and text size when the display width is higher */
 @media only screen and (min-width: 500px) {
+  main {
+    margin-top: 5em;
+  }
+
   header {
-    font-size: xx-large;
+    font-size: 40px;
   }
 
   h2 {
-    font-size: x-large;
+    font-size: 30px;
   }
 
   #auto img {
-    width: 390px;
+    width: 650px;
+    height: 420px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0.5em;
   }
 
   #boton {
     margin-bottom: 5em;
+    width: 200px;
+    height: 60px;
+    line-height: 15px;
+    font-size: x-large;
   }
 
   footer {
